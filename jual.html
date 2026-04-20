@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+  <body>
+    <section class="bg-gradient-to-b from-gray-800 via-gray-800/80 to-black p-4 h-screen">
+        <div class="w-full mx-auto p-4">
+            <div class="grid grid-cols-6 gap-2">
+                <div class="col-span-5 bg-gray-100 rounded-xl shadow h-[80vh] overflow-hidden">
+                    <div class="grid grid-cols-2 gap-2 p-4">
+                        <div class="h-96 p-6 bg-white rounded-xl shadow ml-8">
+                            <div class="flex gap-3">
+                                <div class="flex flex-col gap-2">
+                                    <img src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
+                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border-2 border-orange-500"/>
+
+                                    <img src="/static/img/fotoartikel/bata-dinding-hitam.PNG"
+                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+
+                                    <img src="/static/img/fotoartikel/bata-hitam-desain-dinding-cantik-dan-aesthetic-1.jpg"
+                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+
+                                    <img src="/static/img/fotoartikel/bata-save-earth.jpg"
+                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+
+                                    <img src="/static/img/fotoartikel/bata-hitam-presisi.png"
+                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+                                </div>
+                                <div class="mx-auto">
+                                    <img id="mainImage" src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
+                                        class="w-64 h-80 object-cover rounded transition duration-300" />
+                                </div>
+                                <script>
+                                    const thumbnails = document.querySelectorAll(".thumb");
+                                    const mainImage = document.getElementById("mainImage");
+
+                                    thumbnails.forEach((thumb) => {
+                                        thumb.addEventListener("click", () => {
+                                        // Ganti gambar utama
+                                        mainImage.src = thumb.src;
+
+                                        // Reset border semua thumbnail
+                                        thumbnails.forEach((t) =>
+                                            t.classList.remove("border-orange-500", "border-2"),
+                                        );
+
+                                        // Tambahkan highlight ke yang aktif
+                                        thumb.classList.add("border-orange-500", "border-2");
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="scroll-middle p-6 rounded-xl shadow flex flex-col justify-between h-96 bg-white overflow-y-auto no-scrollbar">
+                             
+                                <div>
+                                    <h1 class="text-2xl font-bold text-gray-800 mb-2">
+                                        Jual Batu Bata Hitam Premium
+                                    </h1>
+
+                                    <p class="text-3xl font-bold text-green-800">Rp 855</p>
+                                    <p class="text-sm text-gray-500 mb-6">
+                                        *Harga Sudah Termasuk PPN
+                                    </p>
+
+                                    <div class="space-y-3 text-sm">
+                                        <div class="flex justify-between border-b pb-2">
+                                            <span class="text-gray-500">Pembelian Min</span>
+                                            <span class="font-medium">6.000 buah</span>
+                                        </div>
+
+                                        <div class="flex justify-between border-b pb-2">
+                                            <span class="text-gray-500">Kategori</span>
+                                            <span class="text-red-500 font-medium">Batu Bata</span>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="mt-6 space-y-3">
+                                    <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition">
+                                        💬 Minta Penawaran
+                                    </button>
+
+                                    <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-medium transition">
+                                        🟢 Hubungi dengan WhatsApp
+                                    </button>
+                                    <div class="mt-6 space-y-4 text-sm text-gray-700">
+
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <span class="text-gray-500">Merek</span><span>-</span>
+                                        <span class="text-gray-500">Nama Pemilik SNI</span><span>-</span>
+                                        <span class="text-gray-500">SNI</span><span>-</span>
+                                        <span class="text-gray-500">Nomor SKU</span><span>-</span>
+                                        <span class="text-gray-500">Kode KBKI</span><span>3744001</span>
+                                        <span class="text-gray-500">Spesifikasi</span><span>Bata Beton</span>
+                                        <span class="text-gray-500">Ukuran</span><span>21 x 10 x 5 cm</span>
+                                        <span class="text-gray-500">Satuan</span><span>CM</span>
+                                        <span class="text-gray-500">Kelompok Material</span><span>Jadi</span>
+                                        <span class="text-gray-500">Satuan Barang</span><span>Pcs</span>
+                                        <span class="text-gray-500">Berat</span><span>1.600 gr</span>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="font-semibold text-gray-800">Deskripsi Produk</h3>
+                                        <p class="mt-2">
+                                            Bata Hitam Premium Reclea Brick® memiliki keunggulan yang lebih baik dibandingkan batu bata konvensional:
+                                        </p>
+
+                                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                                            <li>Ukuran lebih besar (21x10x5 cm)</li>
+                                            <li>Lebih kuat dan kokoh</li>
+                                            <li>Presisi di setiap sisi</li>
+                                            <li>Lebih hemat semen</li>
+                                            <li>1 m² hanya butuh 68 bata</li>
+                                            <li>1 sak semen untuk ±600 bata</li>
+                                            <li>Membuat bangunan lebih sejuk</li>
+                                            <li>Telah teruji & bersertifikat</li>
+                                        </ul>
+
+                                        <p class="mt-3">
+                                            Produk ini ramah lingkungan dan telah mendapatkan sertifikat <b>Gold Green Label</b> serta penghargaan <b>TOP BRAND</b> selama 3 tahun berturut-turut.
+                                        </p>
+
+                                        <p class="mt-2">
+                                            Termasuk kategori bata beton sesuai SNI 03-0349-1989 dengan kuat tekan rata-rata > 100 kg/cm².
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h3 class="font-semibold text-gray-800">Informasi Tambahan</h3>
+                                        <p class="mt-2">
+                                            Diproduksi oleh PT. Surya Jaya Agung - Serdang Bedagai, Sumatera Utara.
+                                        </p>
+                                    </div>
+
+                                    </div>
+                                </div>
+                            
+                        </div>                        
+                    </div>
+                </div>
+                <div class="bg-white col-span-1 rounded-xl shadow">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-gradient-to-b from-gray-800 via-gray-800/80 to-black p-4">
+      <div class="max-w-7xl mx-auto p-4">
+        <!-- Wrapper -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- KIRI (Gambar) -->
+          <div class="bg-white p-4 rounded-xl shadow">
+            
+          </div>
+
+          <!-- TENGAH (Detail Produk) -->
+          <div class="bg-white p-6 rounded-xl shadow flex flex-col justify-between">
+            <div>
+              <h1 class="text-2xl font-bold text-gray-800 mb-2">
+                Jual Batu Bata Hitam Premium
+              </h1>
+
+              <p class="text-3xl font-bold text-orange-500">855</p>
+              <p class="text-sm text-gray-500 mb-6">
+                *Harga Sudah Termasuk PPN
+              </p>
+
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between border-b pb-2">
+                  <span class="text-gray-500">Pembelian Min</span>
+                  <span class="font-medium">6.000 buah</span>
+                </div>
+
+                <div class="flex justify-between border-b pb-2">
+                  <span class="text-gray-500">Kategori</span>
+                  <span class="text-red-500 font-medium">Batu Bata</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Bagikan</span>
+                  <span>-</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="mt-6 space-y-3">
+              <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition">
+                💬 Minta Penawaran
+              </button>
+
+              <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-medium transition">
+                🟢 Hubungi dengan WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- KANAN (Sidebar CTA) -->
+          <div class="bg-blue-500 text-white p-6 rounded-xl shadow flex flex-col justify-between relative overflow-hidden">
+            <!-- Ilustrasi -->
+            <div class="mb-6">
+              <img src="https://via.placeholder.com/200x150" class="mx-auto" />
+            </div>
+
+            <!-- Text -->
+            <div class="text-center mb-6">
+              <p class="text-lg font-semibold">
+                Butuh bantuan atau Konsultasi Produk?
+              </p>
+            </div>
+
+            <!-- Button -->
+            <div class="space-y-3">
+              <button
+                class="w-full bg-white text-blue-500 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+              >
+                📞 Hubungi Kami
+              </button>
+
+              <button
+                class="w-full bg-blue-600 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+              >
+                💬 Hubungi Via WhatsApp
+              </button>
+            </div>
+
+            <!-- Floating WhatsApp -->
+            <div class="absolute bottom-4 right-4">
+              <div
+                class="bg-green-500 w-14 h-14 flex items-center justify-center rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition"
+              >
+                🟢
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+        const middleDiv = document.querySelector('.scroll-middle'); // kasih class ini ke div tengah
+
+        window.addEventListener('wheel', function (e) {
+            const rect = middleDiv.getBoundingClientRect();
+
+            // cek apakah section masih terlihat di viewport
+            const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+            if (!isInView) return;
+
+            const scrollTop = middleDiv.scrollTop;
+            const scrollHeight = middleDiv.scrollHeight;
+            const clientHeight = middleDiv.clientHeight;
+
+            const isScrollingDown = e.deltaY > 0;
+            const isScrollingUp = e.deltaY < 0;
+
+            const atBottom = scrollTop + clientHeight >= scrollHeight - 1;
+            const atTop = scrollTop <= 0;
+
+            // ⛔ tahan scroll halaman kalau masih bisa scroll di tengah
+            if (
+            (isScrollingDown && !atBottom) ||
+            (isScrollingUp && !atTop)
+            ) {
+            e.preventDefault();
+            middleDiv.scrollTop += e.deltaY;
+            }
+        }, { passive: false });
+    </script>
+  </body>
+</html>

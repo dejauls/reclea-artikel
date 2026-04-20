@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="max-w-7xl mx-auto p-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-4 bg-white rounded-2xl p-6 shadow">
+          <img
+            id="mainImage"
+            src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
+            class="w-60 h-80 border-2 border-green-500 rounded mx-auto mx-2 mb-8 object-contain object-center"
+          />
+
+          <div class="flex justify-center gap-2">
+            <img
+              src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
+              class="thumb w-16 h-16 object-cover rounded cursor-pointer border-2 border-orange-500"
+            />
+
+            <img
+              src="/static/img/fotoartikel/bata-dinding-hitam.PNG"
+              class="thumb w-16 h-16 object-cover rounded cursor-pointer border"
+            />
+
+            <img
+              src="/static/img/fotoartikel/bata-hitam-desain-dinding-cantik-dan-aesthetic-1.jpg"
+              class="thumb w-16 h-16 object-cover rounded cursor-pointer border"
+            />
+
+            <img
+              src="/static/img/fotoartikel/bata-save-earth.jpg"
+              class="thumb w-16 h-16 object-cover rounded cursor-pointer border"
+            />
+
+            <img
+              src="/static/img/fotoartikel/bata-hitam-presisi.png"
+              class="thumb w-16 h-16 object-cover rounded cursor-pointer border"
+            />
+          </div>
+
+          <script>
+            const thumbnails = document.querySelectorAll(".thumb");
+            const mainImage = document.getElementById("mainImage");
+
+            thumbnails.forEach((thumb) => {
+              thumb.addEventListener("click", () => {
+                mainImage.src = thumb.src;
+
+                thumbnails.forEach((t) =>
+                  t.classList.remove("border-orange-500", "border-2"),
+                );
+
+                thumb.classList.add("border-orange-500", "border-2");
+              });
+            });
+          </script>
+        </div>
+
+        <div class="lg:col-span-5 bg-white rounded-2xl p-6 shadow">
+          <h1 class="text-xl font-semibold text-gray-800">
+            Bata Hitam Premium 21x10x5 cm
+          </h1>
+
+          <p class="text-2xl font-bold text-green-700 mt-2">Rp 855</p>
+
+          <p class="text-sm text-gray-500 mt-1">*Harga termasuk PPN.</p>
+
+          <div class="flex gap-2 mt-3">
+            <span
+              class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded border"
+            >
+              Termasuk PPN
+            </span>
+          </div>
+
+          <div class="flex gap-6 mt-6 border-b">
+            <button
+              class="pb-2 border-b-2 border-green-600 text-green-700 font-medium"
+            >
+              Spesifikasi Produk
+            </button>
+            <a href="#spesifikasiproduk" class="pb-2 text-gray-500">
+              Deskripsi Produk
+            </a>
+          </div>
+
+          <div class="mt-4 text-sm">
+            <div class="grid grid-cols-2 gap-y-3">
+              <span class="text-gray-500">Satuan</span><span class="font-medium">Buah</span>
+              <span class="text-gray-500">Pembelian minimal</span><span class="font-medium">6000 Buah</span>
+              <span class="text-gray-500">Kelipatan pembelian</span><span class="font-medium">1000 Buah</span>
+              <span class="text-gray-500">Dimensi per unit</span><span class="font-medium">21 cm x 10 cm x 5 cm</span>
+              <span class="text-gray-500">Berat</span><span class="font-medium">1.600 Gram / 1,6 Kg per keping</span>
+              <span class="text-gray-500">Merek</span><span class="text-green-700 font-medium">Reclea Brick®</span>
+              <span class="text-gray-500">Sertifikasi</span><span class="font-medium">SNI</span>
+              <span class="text-gray-500"></span><span class="font-medium">TOP BRAND</span>
+              <span class="text-gray-500"></span><span class="font-medium">GOLD GREEN LABEL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <div
+            class="bg-blue-100 p-4 rounded-xl text-sm text-blue-800 flex justify-between items-center"
+          >
+            <span class="font-bold">Garansi tiap BATA PASTI JADI TEMBOK!</span>
+            🔥
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 shadow">
+            <p class="text-sm text-gray-500">Subtotal</p>
+            <p id="subtotal" class="text-xl font-bold text-green-700">
+              Rp 5.130.000
+            </p>
+
+            <!-- Qty -->
+            <div class="mt-4">
+              <p class="text-sm mb-2">Atur Jumlah Pembelian</p>
+
+              <div class="flex items-center gap-2">
+                <button id="minus" class="w-8 h-8 border rounded-full">
+                  -
+                </button>
+
+                <input
+                  id="qty"
+                  value="6000"
+                  class="w-24 text-center border rounded py-1"
+                />
+
+                <button id="plus" class="w-8 h-8 border rounded-full">+</button>
+                <span class="text-sm">x Buah</span>
+              </div>
+              <p id="qtyError" class="text-red-500 text-xs mt-1 hidden transition-all duration-300">
+                Minimal pembelian adalah 6000 bata
+              </p>
+            </div>
+
+            <div class="grid grid-rows-2 gap-2">
+              <button
+                class="w-full h-12 bg-green-700 text-white py-3 rounded-lg mt-5 font-medium hover:bg-green-800"
+              >
+                Beli Sekarang
+              </button>
+
+              <button
+                class="w-full h-12 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition"
+              >
+                💬 Minta Penawaran
+              </button>
+            </div>
+
+            <!-- Estimasi -->
+            <div class="mt-4 text-sm text-gray-600">
+              <p class="font-medium">Estimasi Pengiriman</p>
+              <p>Kota Medan: 1-4 hari kerja</p>
+              <p>Luar Kota Medan: 2-4 hari kerja</p>
+            </div>
+
+            <button
+              class="w-full border border-2 border-gray-500 mt-4 py-2 rounded-lg text-sm hover:bg-gray-200"
+            >
+              💬 Tanyakan detail produk disini
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-8 mx-auto">
+      <div class="w-full bg-white rounded-2xl p-4 shadow grid grid-cols-2">
+        <div id="spesifikasiproduk" class="ml-8 flex flex-col">
+          <h3 class="font-bold text-xl mx-auto m-4">Deskripsi Produk :</h3>
+          <p class="mt-2">
+            Bata Hitam Premium Reclea Brick® memiliki keunggulan yang lebih baik
+            dibandingkan batu bata konvensional:
+          </p>
+
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Ukuran lebih besar (21x10x5 cm)</li>
+            <li>Lebih kuat dan kokoh</li>
+            <li>Presisi di setiap sisi</li>
+            <li>Lebih hemat semen</li>
+            <li>1 m² hanya butuh 68 bata</li>
+            <li>1 sak semen untuk ±600 bata</li>
+            <li>1 sak semen bisa untuk 7-8 meter persegi</li>
+            <li>Membuat bangunan lebih sejuk</li>
+            <li>Lebih kedap suara</li>
+            <li>Telah teruji & bersertifikat</li>
+          </ul>
+
+          <p class="mt-6">
+            Produk ini ramah lingkungan dan telah mendapatkan sertifikat
+            <b>Gold Green Label</b> serta penghargaan <b>TOP BRAND</b> selama 3
+            tahun berturut-turut.
+          </p>
+
+          <p class="mt-2">
+            Termasuk kategori bata beton sesuai SNI 03-0349-1989 dengan kuat
+            tekan rata-rata > 100 kg/cm².
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const price = 855;
+      const MIN_QTY = 6000;
+      const STEP = 1000;
+
+      const qtyInput = document.getElementById("qty");
+      const subtotal = document.getElementById("subtotal");
+      const btnMinus = document.getElementById("minus");
+      const btnPlus = document.getElementById("plus");
+      const qtyError = document.getElementById("qtyError");
+
+      // 🔹 Update subtotal
+      function updateTotal(qty) {
+        subtotal.innerText = "Rp " + (qty * price).toLocaleString("id-ID");
+      }
+
+      // 🔹 Update tombol minus
+      function updateButtonState(qty) {
+        if (qty <= MIN_QTY) {
+          btnMinus.disabled = true;
+          btnMinus.classList.add("opacity-50", "cursor-not-allowed");
+        } else {
+          btnMinus.disabled = false;
+          btnMinus.classList.remove("opacity-50", "cursor-not-allowed");
+        }
+      }
+
+      // 🔹 Validasi utama
+      function validateQty() {
+        let qty = parseInt(qtyInput.value);
+
+        if (isNaN(qty) || qty < MIN_QTY) {
+          qty = MIN_QTY;
+
+          // tampilkan error
+          qtyError.classList.remove("hidden");
+          qtyInput.classList.add("border-red-500");
+
+          setTimeout(() => {
+            qtyError.classList.add("hidden");
+            qtyInput.classList.remove("border-red-500");
+          }, 2000);
+        }
+
+        // paksa kelipatan 1000
+        qty = Math.floor(qty / STEP) * STEP;
+
+        qtyInput.value = qty;
+
+        updateTotal(qty);
+        updateButtonState(qty);
+      }
+
+      // ➕ tombol tambah
+      btnPlus.onclick = () => {
+        let qty = parseInt(qtyInput.value) || MIN_QTY;
+        qty += STEP;
+        qtyInput.value = qty;
+        validateQty();
+      };
+
+      // ➖ tombol kurang
+      btnMinus.onclick = () => {
+        let qty = parseInt(qtyInput.value) || MIN_QTY;
+        if (qty > MIN_QTY) {
+          qty -= STEP;
+          qtyInput.value = qty;
+          validateQty();
+        }
+      };
+
+      // 🔹 Saat user mengetik (tanpa paksa)
+      qtyInput.addEventListener("input", () => {
+        let qty = parseInt(qtyInput.value);
+
+        if (!isNaN(qty)) {
+          updateTotal(qty);
+
+          if (qty < MIN_QTY) {
+            qtyError.classList.remove("hidden");
+            qtyInput.classList.add("border-red-500");
+          } else {
+            qtyError.classList.add("hidden");
+            qtyInput.classList.remove("border-red-500");
+          }
+
+        } else {
+          qtyError.classList.add("hidden");
+          qtyInput.classList.remove("border-red-500");
+        }
+      });
+
+      // 🔹 Saat keluar dari input
+      qtyInput.addEventListener("blur", validateQty);
+
+      // 🔹 Saat tekan ENTER
+      qtyInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          validateQty();
+          qtyInput.blur();
+        }
+      });
+
+      // 🚀 Init pertama
+      validateQty();
+    </script>
+  </body>
+</html>
