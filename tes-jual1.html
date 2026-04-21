@@ -17,16 +17,16 @@
   </head>
 
   <body class="bg-gray-100">
-    <div class="max-w-7xl mx-auto p-6">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <div class="lg:col-span-4 bg-white rounded-2xl p-6 shadow">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-1 lg:col-span-4 bg-white rounded-2xl p-6 shadow">
           <img
             id="mainImage"
             src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
-            class="w-60 h-80 border-2 border-green-500 rounded mx-auto mx-2 mb-8 object-contain object-center"
+            class="w-full max-w-xs md:max-w-sm lg:w-60 lg:h-80 border-2 border-green-500 rounded mx-auto mb-6 object-contain object-center"
           />
 
-          <div class="flex justify-center gap-2">
+          <div class="flex justify-center gap-2 overflow-x-auto pb-2">
             <img
               src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
               class="thumb w-16 h-16 object-cover rounded cursor-pointer border-2 border-orange-500"
@@ -71,12 +71,12 @@
           </script>
         </div>
 
-        <div class="lg:col-span-5 bg-white rounded-2xl p-6 shadow">
-          <h1 class="text-xl font-semibold text-gray-800">
+        <div class="col-span-1 lg:col-span-5 bg-white rounded-2xl p-6 shadow">
+          <h1 class="text-lg md:text-xl lg:text-xl font-semibold text-gray-800">
             Bata Hitam Premium 21x10x5 cm
           </h1>
 
-          <p class="text-2xl font-bold text-green-700 mt-2">Rp 855</p>
+          <p class="text-xl md:text-2xl font-bold text-green-700 mt-2">Rp 855</p>
 
           <p class="text-sm text-gray-500 mt-1">*Harga termasuk PPN.</p>
 
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <div class="lg:col-span-3 space-y-4">
+        <div class="col-span-2 lg:col-span-3 space-y-4">
           <div
             class="bg-blue-100 p-4 rounded-xl text-sm text-blue-800 flex justify-between items-center"
           >
@@ -140,7 +140,7 @@
                 <input
                   id="qty"
                   value="6000"
-                  class="w-24 text-center border rounded py-1"
+                  class="w-20 md:w-24 text-center border rounded py-1"
                 />
 
                 <button id="plus" class="w-8 h-8 border rounded-full">+</button>
@@ -151,14 +151,14 @@
               </p>
             </div>
 
-            <div class="grid grid-rows-2 gap-2">
-              <button
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
+              <button id="btnBuy"
                 class="w-full h-12 bg-green-700 text-white py-3 rounded-lg mt-5 font-medium hover:bg-green-800"
               >
                 Beli Sekarang
               </button>
 
-              <button
+              <button id="btnOffer"
                 class="w-full h-12 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition"
               >
                 💬 Minta Penawaran
@@ -172,18 +172,19 @@
               <p>Luar Kota Medan: 2-4 hari kerja</p>
             </div>
 
-            <button
-              class="w-full border border-2 border-gray-500 mt-4 py-2 rounded-lg text-sm hover:bg-gray-200"
-            >
-              💬 Tanyakan detail produk disini
-            </button>
+            <a href="https://wa.me/6281234567890?text=Halo%20admin%20Reclea%20Brick"
+            target="_blank"
+            class="w-full block text-center border-2 border-gray-500 mt-4 py-2 rounded-lg text-sm hover:bg-gray-200">
+            
+            💬 Tanyakan detail produk disini
+          </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="w-full px-8 mx-auto">
-      <div class="w-full bg-white rounded-2xl p-4 shadow grid grid-cols-2">
-        <div id="spesifikasiproduk" class="ml-8 flex flex-col">
+    <div class="w-full px-4 md:px-8 mx-auto">
+      <div class="w-full bg-white rounded-2xl px-4 pt-4 pb-8 shadow grid grid-cols-1 md:grid-cols-2 gap-6 md:divide-x divide-gray-300">
+        <div id="spesifikasiproduk" class="ml-2 md:ml-8 flex flex-col">
           <h3 class="font-bold text-xl mx-auto m-4">Deskripsi Produk :</h3>
           <p class="mt-2">
             Bata Hitam Premium Reclea Brick® memiliki keunggulan yang lebih baik
@@ -213,6 +214,90 @@
             Termasuk kategori bata beton sesuai SNI 03-0349-1989 dengan kuat
             tekan rata-rata > 100 kg/cm².
           </p>
+        </div>
+        <div class="flex flex-col pl-4 ">
+          <h3 class="font-bold text-xl mx-auto m-4">Proyek :</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/jparadise.png" alt="">
+              <p class="text-xs">Perumahan J PARADISE</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/project-1.webp" alt="">
+              <p class="text-xs">The Samudra Property</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/viiena.png" alt="">
+              <p class="text-xs">Vienna Botanical Living</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/usuumkm.png" alt="">
+              <p class="text-xs">UMKM USU</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/project-2.webp" alt="">
+              <p class="text-xs">Chansa Group Development</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/project-5.webp" alt="">
+              <p class="text-xs">Institut Teknologi Del</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/project-3.webp" alt="">
+              <p class="text-xs">Sadananda Land Development</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/project-4.webp" alt="">
+              <p class="text-xs">Buana Property Group</p>
+            </div>
+            <div>
+              <img class="w-40 h-60 object-cover" src="https://bataramahlingkungan.co.id/static/img/project/project-6.webp" alt="">
+              <p class="text-xs">Arsitek W_Design</p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col mt-8 ">
+            <p class="mb-2">
+              Lihat Proyek dan testimoni lebih lengkap di :
+            </p>
+
+            <div class="flex items-center gap-4 mx-auto">
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/bataramahlingkungan.id"
+                target="_blank"
+                rel="external"
+                class="flex items-center gap-2 text-pink-600 hover:text-pink-700 transition">
+
+                <!-- SVG IG -->
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                  <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5C18.32 4 20 5.68 20 7.75v8.5c0 2.07-1.68 3.75-3.75 3.75h-8.5C5.68 20 4 18.32 4 16.25v-8.5C4 5.68 5.68 4 7.75 4zm9.25 1.5a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+                </svg>
+
+                <span>Instagram</span>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/@RecleaBrick"
+                target="_blank"
+                rel="external"
+                class="flex items-center gap-2 text-red-600 hover:text-red-700 transition">
+
+                <!-- SVG YT -->
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                  <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.7 5 12 5 12 5h0s-3.7 0-6.9.1c-.4 0-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6C2 14.4 2.2 16 2.2 16s.2 1.4.8 2c.8.8 1.9.8 2.4.9 1.7.2 7.1.2 7.1.2s3.7 0 6.9-.1c.4 0 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6C22 9.6 21.8 8 21.8 8zM10 14.5v-5l5 2.5-5 2.5z"/>
+                </svg>
+
+                <span>YouTube</span>
+              </a>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -323,6 +408,48 @@
 
       // 🚀 Init pertama
       validateQty();
+    </script>
+
+    <script>
+      const btnBuy = document.getElementById("btnBuy");
+
+      btnBuy.addEventListener("click", () => {
+        let qty = parseInt(qtyInput.value) || 6000;
+        let total = qty * price;
+
+        
+        let totalFormatted = total.toLocaleString("id-ID");
+
+        
+        let message = `Halo, saya tertarik membeli Bata Hitam Premium Reclea Brick® sejumlah ${qty} keping dengan total harga Rp ${totalFormatted}.
+
+        Apakah stok tersedia? Dan apakah bisa dikirim ke lokasi saya?
+
+        Terima kasih 🙏`;
+
+        
+        let encodedMessage = encodeURIComponent(message);
+
+        // ganti nomor WA kamu
+        let phone = "6281263837222";  
+
+        // redirect ke WhatsApp
+        window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
+      });
+    </script>
+
+    <script>
+      const btnOffer = document.getElementById("btnOffer");
+
+      btnOffer.addEventListener("click", () => {
+        const phone = "6281263837222"; // ganti nomor kamu
+
+        const message = "Halo admin reclea brick, bisakah saya mendapatkan penawaran Bata Hitam Premium ?";
+
+        const encodedMessage = encodeURIComponent(message);
+
+        window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
+      });
     </script>
   </body>
 </html>
