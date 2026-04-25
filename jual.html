@@ -1,285 +1,648 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  </head>
-  <style>
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-</style>
-  <body>
-    <section class="bg-gradient-to-b from-gray-800 via-gray-800/80 to-black p-4 h-screen">
-        <div class="w-full mx-auto p-4">
-            <div class="grid grid-cols-6 gap-2">
-                <div class="col-span-5 bg-gray-100 rounded-xl shadow h-[80vh] overflow-hidden">
-                    <div class="grid grid-cols-2 gap-2 p-4">
-                        <div class="h-96 p-6 bg-white rounded-xl shadow ml-8">
-                            <div class="flex gap-3">
-                                <div class="flex flex-col gap-2">
-                                    <img src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
-                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border-2 border-orange-500"/>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jual Batu Bata Medan Terbaik | Bata Hitam Premium Reclea Brick® | SNI Bersertifikat</title>
 
-                                    <img src="/static/img/fotoartikel/bata-dinding-hitam.PNG"
-                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+  <!-- SEO Meta -->
+  <meta name="description" content="Supplier batu bata hitam premium terpercaya di Medan, Deli Serdang, Binjai & Sumatera Utara. Reclea Brick® SNI bersertifikat, lebih kuat, hemat semen, harga Rp855/buah. Order via WhatsApp.">
+  <meta name="keywords" content="jual batu bata medan, batu bata hitam medan, supplier bata medan, harga batu bata medan, bata SNI medan, batu bata deli serdang, bata hitam binjai, jual bata sumatera utara, reclea brick, bata hitam premium">
+  <meta name="author" content="Reclea Brick">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jualbatubata.bataramahlingkungan.co.id/">
 
-                                    <img src="/static/img/fotoartikel/bata-hitam-desain-dinding-cantik-dan-aesthetic-1.jpg"
-                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+  <link rel="stylesheet" href="/static/css/stylejual.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jual Batu Bata Medan | Bata Hitam Premium Reclea Brick®">
+  <meta property="og:description" content="Bata hitam premium SNI, lebih kuat, hemat semen & presisi tinggi. Pengiriman ke Medan, Deli Serdang, Binjai & seluruh Sumatera Utara.">
+  <meta property="og:image" content="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png">
+  <meta property="og:url" content="https://jualbatubata.bataramahlingkungan.co.id/">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Reclea Brick">
+  <meta property="og:locale" content="id_ID">
 
-                                    <img src="/static/img/fotoartikel/bata-save-earth.jpg"
-                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jual Batu Bata Medan | Reclea Brick®">
+  <meta name="twitter:description" content="Bata hitam premium SNI — lebih kuat, hemat semen. Tersedia di Medan & Sumatera Utara.">
+  <meta name="twitter:image" content="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png">
 
-                                    <img src="/static/img/fotoartikel/bata-hitam-presisi.png"
-                                        class="thumb w-16 h-16 object-cover rounded cursor-pointer border"/>
-                                </div>
-                                <div class="mx-auto">
-                                    <img id="mainImage" src="/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
-                                        class="w-64 h-80 object-cover rounded transition duration-300" />
-                                </div>
-                                <script>
-                                    const thumbnails = document.querySelectorAll(".thumb");
-                                    const mainImage = document.getElementById("mainImage");
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-                                    thumbnails.forEach((thumb) => {
-                                        thumb.addEventListener("click", () => {
-                                        // Ganti gambar utama
-                                        mainImage.src = thumb.src;
+  <!-- Schema: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Bata Hitam Premium Reclea Brick®",
+    "image": "https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png",
+    "description": "Bata hitam premium 21x10x5 cm di Medan dengan sertifikasi SNI, lebih kuat, presisi, hemat semen. Tersedia untuk Medan, Deli Serdang, Binjai, dan seluruh Sumatera Utara.",
+    "brand": { "@type": "Brand", "name": "Reclea Brick" },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "IDR",
+      "price": "855",
+      "availability": "https://schema.org/InStock",
+      "url": "https://jualbatubata.bataramahlingkungan.co.id/"
+    },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "120" }
+  }
+  </script>
 
-                                        // Reset border semua thumbnail
-                                        thumbnails.forEach((t) =>
-                                            t.classList.remove("border-orange-500", "border-2"),
-                                        );
+  <!-- Schema: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BuildingMaterialsStore",
+    "name": "Reclea Brick Medan",
+    "image": "https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Komp. CBD Polonia Blk. B No.70, Sari Rejo",
+      "addressLocality": "Medan",
+      "addressRegion": "Sumatera Utara",
+      "postalCode": "20157",
+      "addressCountry": "ID"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 3.556095, "longitude": 98.673795 },
+    "telephone": "+6281263837222",
+    "email": "recleabrick@gmail.com",
+    "areaServed": ["Medan", "Deli Serdang", "Binjai", "Sumatera Utara"],
+    "url": "https://bataramahlingkungan.co.id",
+    "openingHours": "Mo-Sa 08:00-17:00"
+  }
+  </script>
+</head>
 
-                                        // Tambahkan highlight ke yang aktif
-                                        thumb.classList.add("border-orange-500", "border-2");
-                                        });
-                                    });
-                                </script>
-                            </div>
-                        </div>
-                        <div class="scroll-middle p-6 rounded-xl shadow flex flex-col justify-between h-96 bg-white overflow-y-auto no-scrollbar">
-                             
-                                <div>
-                                    <h1 class="text-2xl font-bold text-gray-800 mb-2">
-                                        Jual Batu Bata Hitam Premium
-                                    </h1>
+<body>
+  <div class="trust-bar">
+    <div class="trust-scroll" aria-hidden="true">
+      <span class="trust-item">✦ Bersertifikat SNI</span>
+      <span class="trust-item">✦ Gold Green Label</span>
+      <span class="trust-item">✦ Top Brand 3x Berturut</span>
+      <span class="trust-item">✦ Pengiriman Medan & Sumatera Utara</span>
+      <span class="trust-item">✦ Bersertifikat SNI</span>
+      <span class="trust-item">✦ Gold Green Label</span>
+      <span class="trust-item">✦ Top Brand 3x Berturut</span>
+      <span class="trust-item">✦ Pengiriman Medan & Sumatera Utara</span>
+      <span class="trust-item">✦ Bersertifikat SNI</span>
+      <span class="trust-item">✦ Gold Green Label</span>
+      <span class="trust-item">✦ Top Brand 3x Berturut</span>
+      <span class="trust-item">✦ Pengiriman Medan & Sumatera Utara</span>
+    </div>
+  </div>
 
-                                    <p class="text-3xl font-bold text-green-800">Rp 855</p>
-                                    <p class="text-sm text-gray-500 mb-6">
-                                        *Harga Sudah Termasuk PPN
-                                    </p>
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="nav-inner">
+      <a href="/" class="brand" aria-label="Reclea Brick - Beranda">
+        <img src="https://bataramahlingkungan.co.id/static/img/logo/logobar.png" alt="Reclea Brick Logo" width="80" height="40" loading="eager">
+        <img src="https://bataramahlingkungan.co.id/static/img/logo/green-label-indonesia-1.png" alt="Gold Green Label" width="40" height="40" loading="eager">
+      </a>
 
-                                    <div class="space-y-3 text-sm">
-                                        <div class="flex justify-between border-b pb-2">
-                                            <span class="text-gray-500">Pembelian Min</span>
-                                            <span class="font-medium">6.000 buah</span>
-                                        </div>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/proyek">Proyek</a></li>
+          <li><a href="/artikel">Artikel</a></li>
+          <li><a href="/hitungbata">Hitung Bata</a></li>
+          <li><a href="#contact" class="nav-cta">Kontak</a></li>
+        </ul>
+      </nav>
 
-                                        <div class="flex justify-between border-b pb-2">
-                                            <span class="text-gray-500">Kategori</span>
-                                            <span class="text-red-500 font-medium">Batu Bata</span>
-                                        </div>
-                                    </div>
-                                    </div>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-                                    <!-- Button -->
-                                    <div class="mt-6 space-y-3">
-                                    <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition">
-                                        💬 Minta Penawaran
-                                    </button>
+  <!-- ── MOBILE MENU ── -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/proyek">Proyek</a>
+    <a href="/artikel">Artikel</a>
+    <a href="/hitungbata">Hitung Bata</a>
+    <a href="#contact" id="mobileContact">Kontak Kami</a>
+  </nav>
 
-                                    <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-medium transition">
-                                        🟢 Hubungi dengan WhatsApp
-                                    </button>
-                                    <div class="mt-6 space-y-4 text-sm text-gray-700">
-
-                                    <div class="grid grid-cols-2 gap-2">
-                                        <span class="text-gray-500">Merek</span><span>-</span>
-                                        <span class="text-gray-500">Nama Pemilik SNI</span><span>-</span>
-                                        <span class="text-gray-500">SNI</span><span>-</span>
-                                        <span class="text-gray-500">Nomor SKU</span><span>-</span>
-                                        <span class="text-gray-500">Kode KBKI</span><span>3744001</span>
-                                        <span class="text-gray-500">Spesifikasi</span><span>Bata Beton</span>
-                                        <span class="text-gray-500">Ukuran</span><span>21 x 10 x 5 cm</span>
-                                        <span class="text-gray-500">Satuan</span><span>CM</span>
-                                        <span class="text-gray-500">Kelompok Material</span><span>Jadi</span>
-                                        <span class="text-gray-500">Satuan Barang</span><span>Pcs</span>
-                                        <span class="text-gray-500">Berat</span><span>1.600 gr</span>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="font-semibold text-gray-800">Deskripsi Produk</h3>
-                                        <p class="mt-2">
-                                            Bata Hitam Premium Reclea Brick® memiliki keunggulan yang lebih baik dibandingkan batu bata konvensional:
-                                        </p>
-
-                                        <ul class="list-disc pl-5 mt-2 space-y-1">
-                                            <li>Ukuran lebih besar (21x10x5 cm)</li>
-                                            <li>Lebih kuat dan kokoh</li>
-                                            <li>Presisi di setiap sisi</li>
-                                            <li>Lebih hemat semen</li>
-                                            <li>1 m² hanya butuh 68 bata</li>
-                                            <li>1 sak semen untuk ±600 bata</li>
-                                            <li>Membuat bangunan lebih sejuk</li>
-                                            <li>Telah teruji & bersertifikat</li>
-                                        </ul>
-
-                                        <p class="mt-3">
-                                            Produk ini ramah lingkungan dan telah mendapatkan sertifikat <b>Gold Green Label</b> serta penghargaan <b>TOP BRAND</b> selama 3 tahun berturut-turut.
-                                        </p>
-
-                                        <p class="mt-2">
-                                            Termasuk kategori bata beton sesuai SNI 03-0349-1989 dengan kuat tekan rata-rata > 100 kg/cm².
-                                        </p>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="font-semibold text-gray-800">Informasi Tambahan</h3>
-                                        <p class="mt-2">
-                                            Diproduksi oleh PT. Surya Jaya Agung - Serdang Bedagai, Sumatera Utara.
-                                        </p>
-                                    </div>
-
-                                    </div>
-                                </div>
-                            
-                        </div>                        
-                    </div>
-                </div>
-                <div class="bg-white col-span-1 rounded-xl shadow">
-
-                </div>
-            </div>
-
+  <!-- ── HERO ── -->
+  <section class="hero" aria-label="Produk utama">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow fade-up">
+          ★ Pilihan <span>#1</span> Kontraktor Sumatera Utara
         </div>
-    </section>
-    <section class="bg-gradient-to-b from-gray-800 via-gray-800/80 to-black p-4">
-      <div class="max-w-7xl mx-auto p-4">
-        <!-- Wrapper -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <!-- KIRI (Gambar) -->
-          <div class="bg-white p-4 rounded-xl shadow">
-            
-          </div>
+        <h1 class="fade-up">
+          Bata Hitam<br><em>Premium</em><br>Reclea Brick<span style="color:var(--accent-gold)">®</span>
+        </h1>
+        <p class="hero-sub fade-up">
+          Supplier batu bata terpercaya di Medan, Deli Serdang, Binjai & seluruh Sumatera Utara. Kualitas SNI, lebih kuat, hemat semen, harga terbaik.
+        </p>
+        <div class="hero-locations fade-up">
+          <span class="pill">📍 Medan</span>
+          <span class="pill">📍 Deli Serdang</span>
+          <span class="pill">📍 Binjai</span>
+          <span class="pill">📍 Tebing Tinggi</span>
+          <span class="pill">📍 Sumatera Utara</span>
+        </div>
+        <div class="hero-actions fade-up">
+          <a href="https://wa.me/6281263837222?text=Halo%20admin%20Reclea%20Brick%2C%20saya%20ingin%20memesan%20batu%20bata." class="btn btn-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pesan Sekarang
+          </a>
+          <a href="#order" class="btn btn-secondary">Hitung Harga</a>
+        </div>
+      </div>
 
-          <!-- TENGAH (Detail Produk) -->
-          <div class="bg-white p-6 rounded-xl shadow flex flex-col justify-between">
+      <!-- Product Card -->
+      <article class="product-card" aria-label="Detail produk bata hitam premium">
+        <div class="product-badge">SNI Bersertifikat</div>
+        <div class="product-img-wrap">
+          <img
+            id="mainImg"
+            src="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png"
+            alt="Bata Hitam Premium Reclea Brick 21x10x5 cm"
+            width="280"
+            height="280"
+            loading="eager"
+          >
+        </div>
+        <div class="thumbs">
+          <img src="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-premium-reclea-brick-removebg-preview.png" class="thumb active" alt="Bata hitam premium" loading="lazy">
+          <img src="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-dinding-hitam.PNG" class="thumb" alt="Bata dinding hitam" loading="lazy">
+          <img src="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-desain-dinding-cantik-dan-aesthetic-1.jpg" class="thumb" alt="Dinding bata aesthetic" loading="lazy">
+          <img src="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-save-earth.jpg" class="thumb" alt="Bata ramah lingkungan" loading="lazy">
+          <img src="https://bataramahlingkungan.co.id/static/img/fotoartikel/bata-hitam-presisi.png" class="thumb" alt="Bata hitam presisi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <div class="product-price">Rp 855 <small>/ buah (incl. PPN)</small></div>
+          <div class="spec-grid">
+            <div class="spec-item"><div class="spec-label">Dimensi</div><div class="spec-val">21×10×5 cm</div></div>
+            <div class="spec-item"><div class="spec-label">Berat</div><div class="spec-val">1,6 kg/keping</div></div>
+            <div class="spec-item"><div class="spec-label">Min. Order</div><div class="spec-val">6.000 buah</div></div>
+            <div class="spec-item"><div class="spec-label">Sertifikasi</div><div class="spec-val" style="color:var(--accent-gold)">SNI + Top Brand</div></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Proyek Selesai</div>
+      </div>
+      <div>
+        <div class="stat-num">3×</div>
+        <div class="stat-label">Top Brand Award</div>
+      </div>
+      <div>
+        <div class="stat-num">>100</div>
+        <div class="stat-label">Kuat Tekan kg/cm²</div>
+      </div>
+      <div>
+        <div class="stat-num">68</div>
+        <div class="stat-label">Bata per m² dinding</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BENEFITS ── -->
+  <section class="section" aria-labelledby="benefits-title">
+    <div class="section-inner">
+      <div class="section-label">Keunggulan Produk</div>
+      <h2 class="section-title" id="benefits-title">Mengapa Memilih<br>Reclea Brick<span style="color:var(--accent-gold)">®</span>?</h2>
+      <p class="section-desc">Bata hitam premium dengan teknologi presisi tinggi untuk bangunan yang lebih kuat, hemat biaya, dan ramah lingkungan.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">💪</div>
+          <div class="benefit-title">Lebih Kuat & Kokoh</div>
+          <p class="benefit-desc">Kuat tekan rata-rata >100 kg/cm² sesuai standar SNI 03-0349-1989. Lebih kuat dari bata konvensional biasa.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">📐</div>
+          <div class="benefit-title">Presisi Tinggi</div>
+          <p class="benefit-desc">Dimensi seragam 21×10×5 cm di setiap sisi sehingga pemasangan lebih rapi dan cepat.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">💰</div>
+          <div class="benefit-title">Hemat Semen</div>
+          <p class="benefit-desc">1 sak semen untuk ±600 bata atau setara 7–8 m² dinding. Lebih efisien dibanding bata biasa.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">❄️</div>
+          <div class="benefit-title">Bangunan Lebih Sejuk</div>
+          <p class="benefit-desc">Material dan ketebalan optimal membuat ruangan lebih sejuk dan kedap suara secara alami.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🌿</div>
+          <div class="benefit-title">Ramah Lingkungan</div>
+          <p class="benefit-desc">Penerima Gold Green Label — berkomitmen pada proses produksi berwawasan lingkungan yang berkelanjutan.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🏆</div>
+          <div class="benefit-title">Top Brand 3 Tahun</div>
+          <p class="benefit-desc">Penghargaan Top Brand 3 tahun berturut-turut sebagai bukti kepercayaan kontraktor & developer di Sumatera Utara.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ORDER ── -->
+  <section class="order-section" id="order" aria-label="Kalkulator harga dan pemesanan">
+    <div class="order-inner">
+      <div>
+        <div class="section-label">Pemesanan</div>
+        <h2 class="section-title">Hitung Kebutuhan<br>& Pesan Sekarang</h2>
+        <p class="section-desc" style="margin-bottom:2rem;">Minimal pembelian 6.000 bata, kelipatan 1.000. Harga sudah termasuk PPN. Pengiriman langsung ke lokasi proyek Anda.</p>
+
+        <!-- Coverage -->
+        <div class="section-label" style="margin-bottom:1rem;">Area Pengiriman</div>
+        <div class="coverage-grid">
+          <div class="coverage-item">
+            <div class="coverage-icon">🏙️</div>
             <div>
-              <h1 class="text-2xl font-bold text-gray-800 mb-2">
-                Jual Batu Bata Hitam Premium
-              </h1>
-
-              <p class="text-3xl font-bold text-orange-500">855</p>
-              <p class="text-sm text-gray-500 mb-6">
-                *Harga Sudah Termasuk PPN
-              </p>
-
-              <div class="space-y-3 text-sm">
-                <div class="flex justify-between border-b pb-2">
-                  <span class="text-gray-500">Pembelian Min</span>
-                  <span class="font-medium">6.000 buah</span>
-                </div>
-
-                <div class="flex justify-between border-b pb-2">
-                  <span class="text-gray-500">Kategori</span>
-                  <span class="text-red-500 font-medium">Batu Bata</span>
-                </div>
-
-                <div class="flex justify-between">
-                  <span class="text-gray-500">Bagikan</span>
-                  <span>-</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Button -->
-            <div class="mt-6 space-y-3">
-              <button class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-medium transition">
-                💬 Minta Penawaran
-              </button>
-
-              <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-medium transition">
-                🟢 Hubungi dengan WhatsApp
-              </button>
+              <div class="coverage-name">Kota Medan</div>
+              <div class="coverage-sub">1–4 hari kerja</div>
             </div>
           </div>
-
-          <!-- KANAN (Sidebar CTA) -->
-          <div class="bg-blue-500 text-white p-6 rounded-xl shadow flex flex-col justify-between relative overflow-hidden">
-            <!-- Ilustrasi -->
-            <div class="mb-6">
-              <img src="https://via.placeholder.com/200x150" class="mx-auto" />
+          <div class="coverage-item">
+            <div class="coverage-icon">🏘️</div>
+            <div>
+              <div class="coverage-name">Deli Serdang</div>
+              <div class="coverage-sub">2–4 hari kerja</div>
             </div>
-
-            <!-- Text -->
-            <div class="text-center mb-6">
-              <p class="text-lg font-semibold">
-                Butuh bantuan atau Konsultasi Produk?
-              </p>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon">🏭</div>
+            <div>
+              <div class="coverage-name">Binjai</div>
+              <div class="coverage-sub">2–4 hari kerja</div>
             </div>
-
-            <!-- Button -->
-            <div class="space-y-3">
-              <button
-                class="w-full bg-white text-blue-500 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
-              >
-                📞 Hubungi Kami
-              </button>
-
-              <button
-                class="w-full bg-blue-600 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
-              >
-                💬 Hubungi Via WhatsApp
-              </button>
-            </div>
-
-            <!-- Floating WhatsApp -->
-            <div class="absolute bottom-4 right-4">
-              <div
-                class="bg-green-500 w-14 h-14 flex items-center justify-center rounded-full shadow-lg cursor-pointer hover:bg-green-600 transition"
-              >
-                🟢
-              </div>
+          </div>
+          <div class="coverage-item">
+            <div class="coverage-icon">🗺️</div>
+            <div>
+              <div class="coverage-name">Sumatera Utara</div>
+              <div class="coverage-sub">2–5 hari kerja</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <script>
-        const middleDiv = document.querySelector('.scroll-middle'); // kasih class ini ke div tengah
+      <div class="order-box">
+        <div class="order-title">Kalkulator Harga</div>
 
-        window.addEventListener('wheel', function (e) {
-            const rect = middleDiv.getBoundingClientRect();
+        <div class="subtotal-display">
+          <div class="subtotal-label">Total Harga (incl. PPN)</div>
+          <div class="subtotal-val" id="subtotal">Rp 5.130.000</div>
+        </div>
 
-            // cek apakah section masih terlihat di viewport
-            const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;">Jumlah Bata</p>
+        <div class="qty-row">
+          <button class="qty-btn" id="minus" aria-label="Kurangi jumlah">−</button>
+          <input class="qty-input" id="qty" type="number" value="6000" min="6000" step="1000" aria-label="Jumlah bata">
+          <button class="qty-btn" id="plus" aria-label="Tambah jumlah">+</button>
+          <span style="font-size:0.85rem;color:var(--text-muted)">buah</span>
+        </div>
+        <p class="error-msg" id="qtyError">⚠ Minimal pembelian adalah 6.000 bata</p>
 
-            if (!isInView) return;
+        <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:0.5rem;">
+          <button id="btnBuy" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Beli Sekarang
+          </button>
+          <button id="btnOffer" class="btn" style="width:100%;justify-content:center;background:var(--accent-orange);color:#fff;">
+            💬 Minta Penawaran
+          </button>
+          <a href="https://wa.me/6281263837222?text=Halo%20admin%20Reclea%20Brick%2C%20ada%20yang%20ingin%20saya%20tanyakan." target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%;justify-content:center;font-size:0.85rem;">
+            Tanyakan Detail Produk
+          </a>
+        </div>
 
-            const scrollTop = middleDiv.scrollTop;
-            const scrollHeight = middleDiv.scrollHeight;
-            const clientHeight = middleDiv.clientHeight;
+        <div class="delivery-info">
+          <p><strong style="color:var(--text-secondary);">Garansi:</strong> Setiap bata dijamin jadi tembok 🔥</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            const isScrollingDown = e.deltaY > 0;
-            const isScrollingUp = e.deltaY < 0;
+  <!-- ── DESCRIPTION ── -->
+  <section class="section" id="spesifikasiproduk" aria-labelledby="desc-title">
+    <div class="section-inner">
+      <div class="section-label">Deskripsi Produk</div>
+      <h2 class="section-title" id="desc-title">Bata Hitam Premium<br>21×10×5 cm</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2rem;">
+        <div>
+          <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:1rem;">
+            Bata Hitam Premium Reclea Brick® menghadirkan performa superior dibanding bata konvensional dengan ukuran lebih besar yang mempercepat proses pemasangan.
+          </p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> Ukuran lebih besar — 21×10×5 cm</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> Lebih kuat dan kokoh</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> Presisi di setiap sisi</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> Lebih hemat semen</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> 1 m² hanya butuh 68 bata</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> 1 sak semen untuk ±600 bata</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> Bangunan lebih sejuk & kedap suara</li>
+            <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;"><span style="color:var(--accent-green-light);font-size:1rem;">✓</span> Telah teruji & bersertifikat SNI</li>
+          </ul>
+          <div style="margin-top:1.5rem;padding:1rem;background:var(--bg-surface);border:1px solid var(--border);border-radius:8px;font-size:0.85rem;color:var(--text-secondary);line-height:1.6;">
+            Termasuk kategori bata beton sesuai <strong style="color:var(--text-primary)">SNI 03-0349-1989</strong> dengan kuat tekan rata-rata <strong style="color:var(--text-primary)">>100 kg/cm²</strong>. Penerima penghargaan <strong style="color:var(--accent-gold)">Gold Green Label</strong> dan <strong style="color:var(--accent-gold)">Top Brand</strong> 3 tahun berturut-turut.
+          </div>
+        </div>
+        <div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;overflow:hidden;">
+            <div style="padding:1rem 1.25rem;border-bottom:1px solid var(--border);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);">Spesifikasi Teknis</div>
+            <table style="width:100%;border-collapse:collapse;font-size:0.875rem;">
+              <tbody>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Satuan</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;">Buah</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Dimensi</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;">21 × 10 × 5 cm</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Berat</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;">1,6 kg per keping</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Min. Order</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;">6.000 buah</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Kelipatan</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;">1.000 buah</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Harga</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:700;color:var(--accent-green-light);">Rp 855 / buah</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Merek</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;color:var(--accent-green-light);">Reclea Brick®</td>
+                </tr>
+                <tr>
+                  <td style="padding:0.75rem 1.25rem;color:var(--text-muted);">Sertifikasi</td>
+                  <td style="padding:0.75rem 1.25rem;font-weight:500;color:var(--accent-gold);">SNI · Top Brand · Gold Green Label</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            const atBottom = scrollTop + clientHeight >= scrollHeight - 1;
-            const atTop = scrollTop <= 0;
+  <!-- ── PROJECTS ── -->
+  <section class="section" style="padding-top:0;" aria-labelledby="projects-title">
+    <div class="section-inner">
+      <div class="section-label">Portofolio</div>
+      <h2 class="section-title" id="projects-title">Proyek Yang Telah<br>Menggunakan Reclea Brick</h2>
 
-            // ⛔ tahan scroll halaman kalau masih bisa scroll di tengah
-            if (
-            (isScrollingDown && !atBottom) ||
-            (isScrollingUp && !atTop)
-            ) {
-            e.preventDefault();
-            middleDiv.scrollTop += e.deltaY;
-            }
-        }, { passive: false });
-    </script>
-  </body>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/jparadise.png" alt="Proyek Perumahan J Paradise menggunakan Reclea Brick" loading="lazy" width="240" height="160">
+          <p>Perumahan J Paradise</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/project-1.webp" alt="The Samudra Property menggunakan bata hitam Reclea Brick" loading="lazy" width="240" height="160">
+          <p>The Samudra Property</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/viiena.png" alt="Vienna Botanical Living menggunakan Reclea Brick" loading="lazy" width="240" height="160">
+          <p>Vienna Botanical Living</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/usuumkm.png" alt="UMKM USU menggunakan batu bata premium Reclea Brick" loading="lazy" width="240" height="160">
+          <p>UMKM USU</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/project-2.webp" alt="Chansa Group Development proyek bata hitam" loading="lazy" width="240" height="160">
+          <p>Chansa Group Development</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/project-5.webp" alt="Institut Teknologi Del proyek konstruksi Reclea Brick" loading="lazy" width="240" height="160">
+          <p>Institut Teknologi Del</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/project-3.webp" alt="Sadananda Land Development Medan" loading="lazy" width="240" height="160">
+          <p>Sadananda Land Development</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/project-4.webp" alt="Buana Property Group proyek batu bata" loading="lazy" width="240" height="160">
+          <p>Buana Property Group</p>
+        </article>
+        <article class="project-card">
+          <img src="https://bataramahlingkungan.co.id/static/img/project/project-6.webp" alt="Arsitek W_Design proyek Reclea Brick" loading="lazy" width="240" height="160">
+          <p>Arsitek W_Design</p>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://www.instagram.com/bataramahlingkungan.id" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/@RecleaBrick" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 576 512" fill="currentColor"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="contact-inner" style="max-width:1200px;margin:0 auto;padding:5rem 1.5rem;">
+      <div>
+        <div class="section-label">Hubungi Kami</div>
+        <h2 class="section-title" id="contact-title">Siap Membantu<br>Proyek Anda</h2>
+        <p class="section-desc" style="margin-bottom:2.5rem;">Konsultasikan kebutuhan bata untuk proyek Anda. Tim kami siap memberikan penawaran terbaik.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <a href="https://wa.me/6281263837222" class="contact-val">+62 812 6383 7222</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <a href="mailto:recleabrick@gmail.com" class="contact-val">recleabrick@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🏢</div>
+          <div>
+            <div class="contact-label">Kantor</div>
+            <a href="https://maps.app.goo.gl/KVtB6oMo9tcPryHz5" target="_blank" rel="noopener" class="contact-val">
+              Jl. Komp. CBD Polonia Blk. B No.70, Sari Rejo,<br>Kec. Medan Polonia, Kota Medan, Sumatera Utara
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🏭</div>
+          <div>
+            <div class="contact-label">Pabrik</div>
+            <a href="https://maps.app.goo.gl/qfLw3PmcaWfT5XCd6" target="_blank" rel="noopener" class="contact-val">
+              Jl. Medan - Tebing Tinggi, Kec. Perbaungan,<br>Kab. Serdang Bedagai, Sumatera Utara
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1361287042596!2d98.67379566817844!3d3.5560949426284414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131d8b89d8acb%3A0xbea04c25520bf119!2sReclea%20Brick!5e0!3m2!1sid!2sid!4v1717668075126!5m2!1sid!2sid"
+          width="100%"
+          height="100%"
+          title="Lokasi Reclea Brick Medan"
+          style="border:0;min-height:400px;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="https://bataramahlingkungan.co.id/static/img/logo/logobar.png" alt="Reclea Brick" height="32" loading="lazy">
+        <img src="https://bataramahlingkungan.co.id/static/img/logo/green-label-indonesia-1.png" alt="Gold Green Label" height="32" loading="lazy">
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/bataramahlingkungan.id" class="social-link" target="_blank" rel="noopener" aria-label="Instagram Reclea Brick">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@recleabrick" class="social-link" target="_blank" rel="noopener" aria-label="TikTok Reclea Brick">
+          <svg width="14" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+        </a>
+        <a href="https://wa.me/6281263837222" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp Reclea Brick">
+          <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@RecleaBrick" class="social-link" target="_blank" rel="noopener" aria-label="YouTube Reclea Brick">
+          <svg width="16" height="16" viewBox="0 0 576 512" fill="currentColor"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 Reclea Brick. All Rights Reserved. Designed by <a href="https://www.instagram.com/ninjafly.id/" style="color:var(--text-muted);text-decoration:underline;" target="_blank" rel="noopener">Ninjafly.id</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING WA ── -->
+  <a href="https://wa.me/6281263837222?text=Halo%20admin%20Reclea%20Brick%2C%20saya%20ingin%20tanya%20tentang%20batu%20bata." class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp Reclea Brick">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chat WhatsApp
+  </a>
+
+  <!-- ── SCROLL TOP ── -->
+  <button id="scrollTop" aria-label="Kembali ke atas">↑</button>
+
+  <script>
+    //  ── HAMBURGER ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    document.getElementById('mobileContact').addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+
+    const mainImg = document.getElementById('mainImg');
+    document.querySelectorAll('.thumb').forEach(t => {
+      t.addEventListener('click', () => {
+        mainImg.src = t.src;
+        mainImg.alt = t.alt;
+        document.querySelectorAll('.thumb').forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+      });
+    });
+
+    const PRICE = 855, MIN = 6000, STEP = 1000;
+    const qtyEl = document.getElementById('qty');
+    const subtotalEl = document.getElementById('subtotal');
+    const minusBtn = document.getElementById('minus');
+    const plusBtn = document.getElementById('plus');
+    const errEl = document.getElementById('qtyError');
+
+    function fmt(n) { return 'Rp ' + n.toLocaleString('id-ID'); }
+
+    function update(qty) {
+      subtotalEl.textContent = fmt(qty * PRICE);
+      minusBtn.disabled = qty <= MIN;
+    }
+
+    function validate() {
+      let qty = parseInt(qtyEl.value) || MIN;
+      if (qty < MIN) {
+        qty = MIN;
+        errEl.style.display = 'block';
+        qtyEl.style.borderColor = '#ef4444';
+        setTimeout(() => { errEl.style.display = 'none'; qtyEl.style.borderColor = ''; }, 2500);
+      }
+      qty = Math.round(qty / STEP) * STEP;
+      qtyEl.value = qty;
+      update(qty);
+    }
+
+    plusBtn.addEventListener('click', () => { qtyEl.value = (parseInt(qtyEl.value) || MIN) + STEP; validate(); });
+    minusBtn.addEventListener('click', () => { const q = parseInt(qtyEl.value) || MIN; if (q > MIN) { qtyEl.value = q - STEP; validate(); } });
+    qtyEl.addEventListener('blur', validate);
+    qtyEl.addEventListener('input', () => {
+      const q = parseInt(qtyEl.value);
+      if (!isNaN(q)) { subtotalEl.textContent = fmt(q * PRICE); errEl.style.display = q < MIN ? 'block' : 'none'; }
+    });
+    qtyEl.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); validate(); } });
+    validate();
+
+    document.getElementById('btnBuy').addEventListener('click', () => {
+      const qty = parseInt(qtyEl.value) || MIN;
+      const total = (qty * PRICE).toLocaleString('id-ID');
+      const msg = encodeURIComponent(`Halo admin Reclea Brick®, saya ingin membeli Bata Hitam Premium sejumlah ${qty} keping dengan total Rp ${total}.\n\nApakah stok tersedia? Bisakah dikirim ke lokasi saya?\n\nTerima kasih 🙏`);
+      window.open(`https://wa.me/6281263837222?text=${msg}`, '_blank');
+    });
+
+    document.getElementById('btnOffer').addEventListener('click', () => {
+      window.open('https://wa.me/6281263837222?text=' + encodeURIComponent('Halo admin Reclea Brick, bisakah saya mendapatkan penawaran Bata Hitam Premium?'), '_blank');
+    });
+
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+</body>
 </html>
